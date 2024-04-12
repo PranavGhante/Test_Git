@@ -25,3 +25,4 @@ git branch --no-merged  -- displays all the non merged branches
 git branch -d branch_name   -- deletes the branch gives error if the branch not merged 
 git branch -D branch_name  -- deletes the branch even if it is not merged
 git push -d origin bugfix  --- to delete the branch from the remote repository
+rm -rf .git --- removes the initialized git from the current directory
