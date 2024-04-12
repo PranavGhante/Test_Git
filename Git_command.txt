@@ -1,0 +1,27 @@
+git init
+git add --a
+git add file_name.extension
+git status
+git commit -m "message for commit"
+.gitignore file is used to mention file/directory names which are to ignored by the git add command 
+git diff   it compares the working directory with the staging directory
+git commit -a -m "message"  -- This directly commits the trackable files only not the intracable files
+git rm --cached file_name  -- for removing the file from tracking area
+git log -p  -- to get all commits and the differences made in them
+git log --pretty=short
+git log --pretty=full   --- both used for getting the info regarding the commits made 
+git commit --amend  -- used for change the latest commit made 
+git restore --staged file_name.extension   -- used for unstaging the file
+git checkout --file_name.extension  -- restores the file content from previous commit
+git checkout -f  -- restores all the files from their previous commit
+git remote add origin https://github.com/PranavGhante/Test_Git.git  -- setting up the remote git repository
+git push -u origin master   --used push all the files in the current commit to the git repository
+git checkout -b branch_name  -- to create a new branch_name
+git checkout branch_name  -- to change to the specified branch_name
+git merge branch_name   --- to merge the specified branch_name with the master branch
+git branch  -- displays all the branches
+git branch --merged  -- displays all the merged branch
+git branch --no-merged  -- displays all the non merged branches
+git branch -d branch_name   -- deletes the branch gives error if the branch not merged 
+git branch -D branch_name  -- deletes the branch even if it is not merged
+git push -d origin bugfix  --- to delete the branch from the remote repository
